@@ -1,0 +1,15 @@
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\FootballGamePt2.csproj.AssemblyReference.cache
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\FootballGamePt2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\FootballGamePt2.AssemblyInfoInputs.cache
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\FootballGamePt2.AssemblyInfo.cs
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\FootballGamePt2.csproj.CoreCompileInputs.cache
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\bin\Debug\net6.0\FootballGamePt2.exe
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\bin\Debug\net6.0\FootballGamePt2.deps.json
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\bin\Debug\net6.0\FootballGamePt2.runtimeconfig.json
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\bin\Debug\net6.0\FootballGamePt2.dll
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\bin\Debug\net6.0\FootballGamePt2.pdb
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\FootballGamePt2.dll
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\refint\FootballGamePt2.dll
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\FootballGamePt2.pdb
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\FootballGamePt2.genruntimeconfig.cache
+C:\Users\Poli_\source\repos\FootballGamePt2\FootballGamePt2\obj\Debug\net6.0\ref\FootballGamePt2.dll
