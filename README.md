@@ -1,0 +1,3 @@
+My humble OOP homework.
+I kinf of wanted to do more in terms of validation, but I will keep my head low and accept my fate!!!
+Still I did my best at the moment...
