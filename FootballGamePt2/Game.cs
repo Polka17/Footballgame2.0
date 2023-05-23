@@ -48,7 +48,7 @@ namespace FootballGamePt2
         {
             if (player != null && Goals.ContainsKey(player))
             {
-                Console.WriteLine("Goal already recorded for this player.");
+                Console.WriteLine("This goal is alredy added!");
                 return;
             }
 
