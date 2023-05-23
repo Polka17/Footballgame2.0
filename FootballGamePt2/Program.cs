@@ -26,6 +26,9 @@
     goalkeeper/Aria/19/17/165
     striker/Rali/21/6/159
  */
+
+
+//Generate different types of players and enter the needed info about them
 static FootballPlayer[] GeneratePlayers(int count)
 {
     FootballPlayer[] playersC = new FootballPlayer[count];
@@ -75,6 +78,7 @@ static FootballPlayer[] GeneratePlayers(int count)
 }
 
 
+//Generate coaches
 Console.WriteLine("----Coaches----");
 Console.WriteLine("Enter the number of coaches:");
 int coachCount = int.Parse(Console.ReadLine());
@@ -90,6 +94,7 @@ for (int i = 0; i < coaches.Length; i++)
 }
 
 
+//Generate referees - static value of 3(1 referee and 2 assistant referees)
 Console.WriteLine("----Referees----");
 Referee[] referees = new Referee[3];
 for (int i = 0; i < referees.Length; i++)
@@ -103,13 +108,15 @@ for (int i = 0; i < referees.Length; i++)
 }
 
 
+//Generate teams and assign them a coach and players
 Console.WriteLine("----Teams----");
 Console.WriteLine("Enter the number of teams:");
 int teamCount = int.Parse(Console.ReadLine());
 Team[] teams = new Team[teamCount];
-for (int i = 0; i < referees.Length - 1; i++)
+for (int i = 0; i < teams.Length; i++)
 {
     Team team = new Team();
+    Console.WriteLine();
     Console.WriteLine("Enter team's coach number(array number):");
     int coachNum = int.Parse(Console.ReadLine());
     team.Coach = coaches[coachNum];
@@ -117,9 +124,10 @@ for (int i = 0; i < referees.Length - 1; i++)
     int count = int.Parse(Console.ReadLine());
     team.Players = GeneratePlayers(count);
     teams[i] = team;
-    Console.WriteLine();
 }
 
+
+//Generate game and assignt teams and referees
 Console.WriteLine("----Game----");
 Game game = new Game();
 Console.WriteLine("Enter the first team's number(array number):");
@@ -131,12 +139,14 @@ game.TeamTwo = teams[teamNum2];
 game.Referees = referees;
 
 
+//Add goals to the game - how many, who scored and when
 Console.WriteLine("----Goals----");
 Console.WriteLine("Enter the number of goals you want:");
 int goalsCount = int.Parse(Console.ReadLine());
 for (int i = 0; i < goalsCount; i++)
 {
-    Console.WriteLine("Enter the team number(array number) that scored:");
+    Console.WriteLine();
+    Console.WriteLine("Enter the team number(1 or 2) that scored:");
     int teamNum = int.Parse(Console.ReadLine());
     if (teamNum == 1)
     {
@@ -159,5 +169,7 @@ Console.WriteLine();
 Console.WriteLine("---------------------------------------------");
 Console.WriteLine("Game Info");
 
+
+//show the game's details
 game.ChangeResult();
 game.GameResult();

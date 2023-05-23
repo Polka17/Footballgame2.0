@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FootballGamePt2
 {
+    //the Big Boss class
     public abstract class Person
     {
         public string Name { get; set; }

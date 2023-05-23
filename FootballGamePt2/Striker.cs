@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FootballGamePt2
 {
+    //Small cute footballers
     public class Striker : FootballPlayer
     {
     }

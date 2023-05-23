@@ -20,6 +20,7 @@ namespace FootballGamePt2
             get { return teamOne; }
             set
             {
+                // (1) had to research a bit here about 'value' since I got confused at first with the null references and got stuck there...
                 if(value.Players.Length != 11)
                 {
                     throw new ArgumentException("Only 11 players allowed on the field!!");
@@ -32,6 +33,7 @@ namespace FootballGamePt2
             get { return teamTwo; }
             set
             {
+                //same here --> (1)
                 if (value.Players.Length != 11)
                 {
                     throw new ArgumentException("Only 11 players allowed on the field!!");
@@ -44,6 +46,8 @@ namespace FootballGamePt2
         public string Result { get; set; }
         public string Winner { get; set; }
 
+
+        //Add goal if it is not a null value or if it isn't already scored. Assign the minute(value) to the player(key)
         public void AddGoal(FootballPlayer player, int minute)
         {
             if (player != null && Goals.ContainsKey(player))
@@ -55,6 +59,7 @@ namespace FootballGamePt2
             Goals[player] = minute;
         }
 
+        //check in which team is the player that scored, increase the said team goals, compare them and get winner
         public void ChangeResult()
         {
             int teamOneGoals = 0;
@@ -87,6 +92,8 @@ namespace FootballGamePt2
                 Winner = "Draw";
             }
         }
+
+        //Showing players, coaches, referees, goals and result + winner
         public void GameResult()
         {
             Console.WriteLine("-----TEAM 1-----");
@@ -94,7 +101,7 @@ namespace FootballGamePt2
             {
                 Console.WriteLine($"{player.Name} №{player.Number}");
             }
-            Console.WriteLine("----Coach-----");
+            Console.WriteLine("-----Coach-----");
             Console.WriteLine(TeamOne.Coach.Name);
             Console.WriteLine();
 
@@ -107,7 +114,7 @@ namespace FootballGamePt2
             Console.WriteLine(TeamTwo.Coach.Name);
             Console.WriteLine();
 
-            Console.WriteLine("-----REFEREES");
+            Console.WriteLine("-----REFEREES-----");
             foreach (var referees in Referees)
             {
                 Console.WriteLine(referees.Name);
