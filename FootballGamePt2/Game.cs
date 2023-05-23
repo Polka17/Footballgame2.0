@@ -72,7 +72,7 @@ namespace FootballGamePt2
                 }
             }
 
-            Result = $" Team 1 {teamOneGoals} - {teamTwoGoals} Team 2";
+            Result = $" Team 1 |{teamOneGoals} - {teamTwoGoals}| Team 2";
 
             if (teamOneGoals > teamTwoGoals)
             {
@@ -89,8 +89,40 @@ namespace FootballGamePt2
         }
         public void GameResult()
         {
-            Console.WriteLine("Result: " + Result);
-            Console.WriteLine("Winner: " + Winner);
+            Console.WriteLine("-----TEAM 1-----");
+            foreach(var player in TeamOne.Players)
+            {
+                Console.WriteLine($"{player.Name} №{player.Number}");
+            }
+            Console.WriteLine("----Coach-----");
+            Console.WriteLine(TeamOne.Coach.Name);
+            Console.WriteLine();
+
+            Console.WriteLine("-----TEAM 2-----");
+            foreach (var player in TeamTwo.Players)
+            {
+                Console.WriteLine($"{player.Name} №{player.Number}");
+            }
+            Console.WriteLine("-----Coach-----");
+            Console.WriteLine(TeamTwo.Coach.Name);
+            Console.WriteLine();
+
+            Console.WriteLine("-----REFEREES");
+            foreach (var referees in Referees)
+            {
+                Console.WriteLine(referees.Name);
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("-----GOALS-----");
+            foreach (var goal in Goals)
+            {
+                Console.WriteLine($"Goal in {goal.Value} by {goal.Key.Name}");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("RESULT: " + Result);
+            Console.WriteLine("WINNER: " + Winner);
         }
     }
 }
